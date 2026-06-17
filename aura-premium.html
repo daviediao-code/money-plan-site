@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aura — Spatial Audio Redefined</title>
+<link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#000;--text:#f5f5f7;--muted:#86868b;--accent:#2997ff}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+  .container{max-width:980px;margin:0 auto;padding:0 22px}
+  nav{padding:16px 0;display:flex;justify-content:center;align-items:center;gap:40px}
+  nav a{color:var(--muted);text-decoration:none;font-size:12px;letter-spacing:-0.01em}
+  nav a:hover{color:#fff}
+  .nav-logo{font-size:18px;font-weight:600}
+  .hero{text-align:center;padding:80px 0 60px}
+  .hero h1{font-size:80px;font-weight:700;letter-spacing:-0.03em;line-height:1.05;margin-bottom:16px}
+  .hero .subtitle{font-size:28px;font-weight:400;color:var(--muted);margin-bottom:8px}
+  .hero .price-line{font-size:18px;color:var(--muted);margin-bottom:32px}
+  .hero .links{display:flex;gap:24px;justify-content:center}
+  .hero .links a{color:var(--accent);text-decoration:none;font-size:20px}
+  .hero .links a::after{content:' >'}
+  .hero-image{width:100%;height:500px;background:radial-gradient(ellipse at center bottom,rgba(41,151,255,.15),transparent 70%);display:flex;align-items:center;justify-content:center;margin:40px 0}
+  .hero-image .device{width:280px;height:280px;border-radius:50%;background:linear-gradient(145deg,#1a1a2e,#16213e);box-shadow:0 0 80px rgba(41,151,255,.2);display:flex;align-items:center;justify-content:center;font-size:120px}
+  .section{padding:100px 0}
+  .section .eyebrow{font-size:16px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px}
+  .section h2{font-size:56px;font-weight:700;letter-spacing:-0.03em;line-height:1.08;margin-bottom:20px}
+  .section p{font-size:21px;color:var(--muted);line-height:1.5;max-width:600px}
+  .specs{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:64px;text-align:center}
+  .spec{padding:32px 16px;border-top:1px solid #1d1d1f}
+  .spec .value{font-size:48px;font-weight:700;letter-spacing:-0.02em;margin-bottom:8px}
+  .spec .label{font-size:14px;color:var(--muted)}
+  .features-dark{background:#101010;padding:100px 0}
+  .features-dark .container{text-align:center}
+  .features-dark h2{font-size:48px;font-weight:700;margin-bottom:64px}
+  .feature-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .feature-box{background:#1d1d1f;border-radius:20px;padding:48px 36px;text-align:left;min-height:360px;display:flex;flex-direction:column;justify-content:flex-end}
+  .feature-box h3{font-size:28px;font-weight:700;margin-bottom:8px}
+  .feature-box p{font-size:16px;color:var(--muted);line-height:1.4}
+  .feature-box .icon{font-size:48px;margin-bottom:24px}
+  .cta-section{text-align:center;padding:120px 0}
+  .cta-section h2{font-size:64px;font-weight:700;letter-spacing:-0.03em;margin-bottom:24px}
+  .cta-section .btn{display:inline-block;padding:18px 40px;border-radius:100px;background:var(--accent);color:#fff;font-size:18px;font-weight:600;text-decoration:none}
+  footer{padding:40px 0;border-top:1px solid #1d1d1f;text-align:center;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<nav>
+  <span class="nav-logo">🎧 Aura</span>
+  <a href="#">Overview</a>
+  <a href="#">Specs</a>
+  <a href="#">Compare</a>
+  <a href="#">Buy</a>
+</nav>
+<section class="hero">
+  <div class="container">
+    <h1>Aura Pro</h1>
+    <p class="subtitle">Spatial audio. Perfected.</p>
+    <p class="price-line">From $549</p>
+    <div class="links"><a href="#">Learn more</a><a href="#">Buy</a></div>
+  </div>
+</section>
+<div class="hero-image"><div class="device">🎵</div></div>
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Sound</p>
+    <h2>A sound so rich,<br>you feel it.</h2>
+    <p>Custom acoustic architecture delivers deeper bass, clearer mids, and crystalline highs. Adaptive EQ adjusts music in real time.</p>
+    <div class="specs">
+      <div class="spec"><div class="value">48h</div><div class="label">Battery life</div></div>
+      <div class="spec"><div class="value">-50dB</div><div class="label">Noise cancellation</div></div>
+      <div class="spec"><div class="value">360°</div><div class="label">Spatial audio</div></div>
+      <div class="spec"><div class="value">40mm</div><div class="label">Custom drivers</div></div>
+    </div>
+  </div>
+</section>
+<section class="features-dark">
+  <div class="container">
+    <h2>Designed for everyone.</h2>
+    <div class="feature-strip">
+      <div class="feature-box"><div class="icon">💧</div><h3>Sweat resistant</h3><p>IPX4 water resistance for workouts in any weather.</p></div>
+      <div class="feature-box"><div class="icon">🔄</div><h3>Auto switch</h3><p>Seamlessly moves between your iPhone, iPad, and Mac.</p></div>
+      <div class="feature-box"><div class="icon">🎙️</div><h3>Crystal calls</h3><p>Beamforming mic array isolates your voice during calls.</p></div>
+    </div>
+  </div>
+</section>
+<section class="cta-section">
+  <h2>Hear the difference.</h2>
+  <a href="#" class="btn">Pre-order now</a>
+</section>
+<footer><div class="container">© 2026 Aura Inc. All rights reserved.</div></footer>
+</body>
+</html>

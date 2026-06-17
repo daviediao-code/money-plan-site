@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lumina — AI Writing Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0a0a0a;--surface:#111;--border:#222;--text:#fff;--muted:#888;--accent:#6e56cf;--accent2:#ff6b6b}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+  .container{max-width:1200px;margin:0 auto;padding:0 40px}
+  nav{padding:24px 0;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:22px;font-weight:800;letter-spacing:-0.5px}
+  .logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .nav-links{display:flex;gap:32px;font-size:14px;color:var(--muted)}
+  .nav-links a{color:var(--muted);text-decoration:none;transition:color .2s}
+  .nav-links a:hover{color:#fff}
+  .nav-cta{padding:10px 24px;border-radius:100px;background:#fff;color:#0a0a0a;font-size:14px;font-weight:600;text-decoration:none}
+  .hero{padding:120px 0 80px;text-align:center}
+  .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border-radius:100px;background:rgba(110,86,207,.12);border:1px solid rgba(110,86,207,.25);font-size:13px;color:#a78bfa;margin-bottom:32px}
+  .hero h1{font-size:72px;font-weight:800;letter-spacing:-3px;line-height:1.05;margin-bottom:24px}
+  .hero h1 .grad{background:linear-gradient(135deg,#a78bfa,#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .hero p{font-size:22px;color:var(--muted);max-width:600px;margin:0 auto 48px;line-height:1.5}
+  .hero-actions{display:flex;gap:16px;justify-content:center}
+  .btn-primary{padding:16px 36px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#8b5cf6);color:#fff;font-size:16px;font-weight:600;text-decoration:none;border:none;cursor:pointer}
+  .btn-secondary{padding:16px 36px;border-radius:14px;background:transparent;color:#fff;font-size:16px;font-weight:600;text-decoration:none;border:1px solid var(--border);cursor:pointer}
+  .hero-visual{margin-top:64px;border-radius:20px;border:1px solid var(--border);overflow:hidden;background:var(--surface)}
+  .hero-visual-inner{height:400px;display:flex;align-items:center;justify-content:center;position:relative}
+  .mock-ui{width:90%;height:85%;background:linear-gradient(180deg,rgba(110,86,207,.08),transparent);border-radius:12px;display:flex;flex-direction:column;padding:32px}
+  .mock-bar{display:flex;gap:8px;margin-bottom:24px}
+  .mock-dot{width:12px;height:12px;border-radius:50%;background:var(--border)}
+  .mock-lines{flex:1;display:flex;flex-direction:column;gap:12px}
+  .mock-line{height:14px;border-radius:7px;background:var(--border)}
+  .mock-line:nth-child(1){width:85%}.mock-line:nth-child(2){width:70%}.mock-line:nth-child(3){width:92%}.mock-line:nth-child(4){width:60%}.mock-line:nth-child(5){width:78%}
+  .mock-line.accent{background:linear-gradient(90deg,rgba(110,86,207,.3),rgba(255,107,107,.2))}
+  .section{padding:100px 0}
+  .section-title{text-align:center;font-size:48px;font-weight:800;letter-spacing:-2px;margin-bottom:16px}
+  .section-sub{text-align:center;color:var(--muted);font-size:20px;margin-bottom:64px;max-width:500px;margin-left:auto;margin-right:auto}
+  .features{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .feature-card{padding:40px;border-radius:20px;background:var(--surface);border:1px solid var(--border);transition:border-color .3s}
+  .feature-card:hover{border-color:rgba(110,86,207,.4)}
+  .feature-icon{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,rgba(110,86,207,.2),rgba(255,107,107,.1));display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px}
+  .feature-card h3{font-size:20px;font-weight:700;margin-bottom:8px}
+  .feature-card p{font-size:15px;color:var(--muted);line-height:1.5}
+  .pricing-section{background:var(--surface);border-radius:24px;padding:64px;border:1px solid var(--border)}
+  .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+  .price-card{padding:40px;border-radius:20px;background:var(--bg);border:1px solid var(--border)}
+  .price-card.popular{border-color:var(--accent);position:relative}
+  .price-card.popular::before{content:'Most Popular';position:absolute;top:-12px;left:50%;transform:translateX(-50%);padding:4px 16px;border-radius:100px;background:var(--accent);font-size:12px;font-weight:700;color:#fff}
+  .price-card h3{font-size:18px;font-weight:600;color:var(--muted);margin-bottom:8px}
+  .price-card .amount{font-size:56px;font-weight:800;letter-spacing:-2px}
+  .price-card .period{font-size:16px;color:var(--muted)}
+  .price-card ul{list-style:none;margin-top:24px;display:flex;flex-direction:column;gap:12px}
+  .price-card li{font-size:15px;color:var(--muted);padding-left:24px;position:relative}
+  .price-card li::before{content:'✓';position:absolute;left:0;color:#a78bfa;font-weight:700}
+  .footer{padding:48px 0;border-top:1px solid var(--border);display:flex;justify-content:space-between;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="container">
+  <nav>
+    <div class="logo"><span>Lumina</span></div>
+    <div class="nav-links">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Docs</a>
+      <a href="#">Blog</a>
+    </div>
+    <a href="#" class="nav-cta">Get Started</a>
+  </nav>
+  <section class="hero">
+    <div class="hero-badge">✨ Now with GPT-4 Turbo</div>
+    <h1>Write better.<br><span class="grad">Ship faster.</span></h1>
+    <p>AI-powered writing platform that helps you create blog posts, marketing copy, and documentation in minutes — not hours.</p>
+    <div class="hero-actions">
+      <a href="#" class="btn-primary">Start Writing Free</a>
+      <a href="#" class="btn-secondary">Watch Demo ▶</a>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-visual-inner">
+        <div class="mock-ui">
+          <div class="mock-bar"><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div></div>
+          <div class="mock-lines">
+            <div class="mock-line accent"></div>
+            <div class="mock-line"></div>
+            <div class="mock-line"></div>
+            <div class="mock-line accent"></div>
+            <div class="mock-line"></div>
+            <div class="mock-line"></div>
+            <div class="mock-line accent"></div>
+            <div class="mock-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2 class="section-title">Everything you need</h2>
+    <p class="section-sub">Powerful features to streamline your content workflow</p>
+    <div class="features">
+      <div class="feature-card"><div class="feature-icon">⚡</div><h3>Lightning Fast</h3><p>Generate 1000-word drafts in under 10 seconds with our optimized AI pipeline.</p></div>
+      <div class="feature-card"><div class="feature-icon">🎯</div><h3>Tone Matching</h3><p>Match your brand voice perfectly — casual, professional, or technical.</p></div>
+      <div class="feature-card"><div class="feature-icon">🔄</div><h3>Iterative Editing</h3><p>Refine output with natural language instructions — "make it punchier" or "add examples".</p></div>
+      <div class="feature-card"><div class="feature-icon">📊</div><h3>SEO Optimization</h3><p>Built-in SEO scoring with real-time suggestions for better rankings.</p></div>
+      <div class="feature-card"><div class="feature-icon">🌍</div><h3>50+ Languages</h3><p>Create content in any language with native-quality translations.</p></div>
+      <div class="feature-card"><div class="feature-icon">🔒</div><h3>Enterprise Secure</h3><p>SOC2 compliant. Your data never trains our models.</p></div>
+    </div>
+  </section>
+  <section class="section">
+    <h2 class="section-title">Simple pricing</h2>
+    <p class="section-sub">Start free, scale when you're ready</p>
+    <div class="pricing-section">
+      <div class="pricing-grid">
+        <div class="price-card"><h3>Free</h3><div class="amount">$0<span class="period">/mo</span></div><ul><li>5,000 words/month</li><li>3 tone presets</li><li>Basic templates</li><li>Email support</li></ul></div>
+        <div class="price-card popular"><h3>Pro</h3><div class="amount">$29<span class="period">/mo</span></div><ul><li>50,000 words/month</li><li>Unlimited tones</li><li>All templates</li><li>SEO optimization</li><li>Priority support</li></ul></div>
+        <div class="price-card"><h3>Team</h3><div class="amount">$99<span class="period">/mo</span></div><ul><li>Unlimited words</li><li>Brand kit</li><li>Team collaboration</li><li>API access</li><li>Dedicated support</li></ul></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div>© 2026 Lumina. All rights reserved.</div>
+    <div>Privacy · Terms · Contact</div>
+  </footer>
+</div>
+</body>
+</html>
