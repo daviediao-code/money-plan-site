@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Davie Diao — Security Researcher, Developer & Designer</title>
+<style>
+  :root{--bg:#080809;--surface:#0c0c0d;--border:#1a1a1f;--text:#ededed;--muted:#6d6d73;--accent:#5e6ad2;--green:#34d399;--purple:#a78bfa}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  .container{max-width:1200px;margin:0 auto;padding:0 48px}
+  
+  /* Hero */
+  .hero{padding:100px 0 60px;border-bottom:1px solid var(--border)}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .hero-avatar{width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--purple));display:flex;align-items:center;justify-content:center;font-size:80px;margin:0 auto}
+  .hero h1{font-size:56px;font-weight:800;letter-spacing:-0.03em;margin-bottom:16px}
+  .hero .tagline{font-size:22px;color:var(--muted);margin-bottom:24px}
+  .hero .badges{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+  .badge{padding:6px 16px;border-radius:100px;background:rgba(94,106,210,.1);border:1px solid rgba(94,106,210,.2);font-size:13px;color:var(--accent)}
+  .hero .stats{display:flex;gap:40px;margin-top:32px}
+  .stat{text-align:center}
+  .stat-num{font-size:32px;font-weight:800;color:var(--green)}
+  .stat-label{font-size:13px;color:var(--muted)}
+  .hero-links{display:flex;gap:16px;margin-top:32px}
+  .btn{padding:12px 28px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-outline{border:1px solid var(--border);color:var(--text)}
+  
+  /* Sections */
+  section{padding:80px 0}
+  section h2{font-size:36px;font-weight:800;margin-bottom:8px;letter-spacing:-0.02em}
+  section .section-desc{color:var(--muted);font-size:18px;margin-bottom:48px}
+  
+  /* Services Grid */
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .service-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:36px;transition:border-color .3s,transform .2s}
+  .service-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .service-icon{font-size:36px;margin-bottom:16px}
+  .service-card h3{font-size:20px;font-weight:700;margin-bottom:8px}
+  .service-card p{font-size:15px;color:var(--muted);line-height:1.5;margin-bottom:16px}
+  .service-price{font-size:14px;color:var(--green);font-weight:600}
+  
+  /* Portfolio Grid */
+  .portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .portfolio-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color .3s}
+  .portfolio-card:hover{border-color:var(--accent)}
+  .portfolio-thumb{height:200px;background:linear-gradient(135deg,rgba(94,106,210,.1),rgba(167,139,250,.1));display:flex;align-items:center;justify-content:center;font-size:64px}
+  .portfolio-info{padding:24px}
+  .portfolio-info h3{font-size:18px;font-weight:700;margin-bottom:4px}
+  .portfolio-info p{font-size:14px;color:var(--muted)}
+  .portfolio-info a{display:inline-block;margin-top:12px;color:var(--accent);text-decoration:none;font-size:14px;font-weight:600}
+  
+  /* About */
+  .about-grid{display:grid;grid-template-columns:2fr 1fr;gap:48px}
+  .about-text h3{font-size:24px;font-weight:700;margin-bottom:16px}
+  .about-text p{font-size:16px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+  .skills-list{display:flex;flex-wrap:wrap;gap:8px}
+  .skill-tag{padding:6px 14px;border-radius:8px;background:rgba(255,255,255,.04);border:1px solid var(--border);font-size:13px;color:var(--muted)}
+  
+  /* Contact */
+  .contact-section{background:var(--surface);border-radius:20px;padding:60px;text-align:center;border:1px solid var(--border)}
+  .contact-section h2{font-size:36px;font-weight:800;margin-bottom:12px}
+  .contact-section p{color:var(--muted);font-size:18px;margin-bottom:32px}
+  .contact-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  
+  /* Footer */
+  footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:14px}
+  
+  @media(max-width:768px){
+    .hero-grid,.about-grid,.portfolio-grid,.services-grid{grid-template-columns:1fr}
+    .hero h1{font-size:36px}
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="badges">
+          <span class="badge">🛡️ Bug Bounty Hunter</span>
+          <span class="badge">🐦 H1 $15K+ Earned</span>
+          <span class="badge">🐦 Intigriti codey_diao</span>
+          <span class="badge">📱 Flutter Developer</span>
+          <span class="badge">🎬 Video Producer</span>
+        </div>
+        <h1>Davie Diao</h1>
+        <p class="tagline">I build secure apps, beautiful landing pages, and engaging videos — from concept to delivery in days, not weeks.</p>
+        <div class="hero-links">
+          <a href="#services" class="btn btn-primary">View Services ↓</a>
+          <a href="#portfolio" class="btn btn-outline">See Portfolio</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Targets Scanned</div></div>
+          <div class="stat"><div class="stat-num">$15K+</div><div class="stat-label">Bounty Earned</div></div>
+          <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Languages</div></div>
+        </div>
+      </div>
+      <div class="hero-avatar">👨‍💻</div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="container">
+    <h2>Services</h2>
+    <p class="section-desc">Professional services with fast turnaround and production-quality results</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <h3>Security Audit</h3>
+        <p>API & web app security testing using bug bounty methodology. Find real vulnerabilities, not just scan results.</p>
+        <div class="service-price">From $500 · 3-7 days</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Flutter App Development</h3>
+        <p>Cross-platform mobile apps with clean architecture, offline support, and multi-language. MVP in 2 weeks.</p>
+        <div class="service-price">From $2,000 · 2-4 weeks</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎬</div>
+        <h3>Video Production</h3>
+        <p>Animated product demos, data visualizations, and brand intros. Professional quality delivered in hours.</p>
+        <div class="service-price">From $299 · 1-3 days</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>Landing Page Design</h3>
+        <p>Conversion-optimized landing pages. Stripe, Apple, or Linear style — pixel-perfect and responsive.</p>
+        <div class="service-price">From $300 · 2-5 days</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏷️</div>
+        <h3>Brand Identity</h3>
+        <p>Complete visual identity system — logo, colors, typography, guidelines, social templates in Figma.</p>
+        <div class="service-price">From $300 · 5-10 days</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🕷️</div>
+        <h3>Web Scraping & Automation</h3>
+        <p>Custom scrapers, browser automation, price monitoring, data collection pipelines with headless Chrome.</p>
+        <div class="service-price">From $100 · 1-3 days</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio">
+  <div class="container">
+    <h2>Recent Work</h2>
+    <p class="section-desc">Selected samples from my portfolio</p>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="portfolio-thumb">🌐</div>
+        <div class="portfolio-info">
+          <h3>Stripe-style SaaS Landing Page</h3>
+          <p>Dark theme, gradient accents, pricing section — modern SaaS design</p>
+          <a href="https://daviediao-code.github.io/money-plan-site/lumina-saas.html" target="_blank">View Demo →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-thumb">🍎</div>
+        <div class="portfolio-info">
+          <h3>Apple-style Premium Product Page</h3>
+          <p>Clean typography, large imagery, minimal — luxury product presentation</p>
+          <a href="https://daviediao-code.github.io/money-plan-site/aura-premium.html" target="_blank">View Demo →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-thumb">⚡</div>
+        <div class="portfolio-info">
+          <h3>Linear-style Developer Tool Page</h3>
+          <p>Dark UI, dashboard mockup, feature grid — devtools aesthetic</p>
+          <a href="https://daviediao-code.github.io/money-plan-site/metricflow-devtools.html" target="_blank">View Demo →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-thumb">🎬</div>
+        <div class="portfolio-info">
+          <h3>Product Demo Video</h3>
+          <p>Animated SaaS demo with GSAP transitions, stats reveal, and CTA</p>
+          <a href="video_samples/product-demo.mp4" target="_blank">Watch Sample →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-thumb">📊</div>
+        <div class="portfolio-info">
+          <h3>Data Visualization Video</h3>
+          <p>NYT-style animated charts and statistics for security research report</p>
+          <a href="video_samples/data-viz.mp4" target="_blank">Watch Sample →</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-thumb">🐾</div>
+        <div class="portfolio-info">
+          <h3>PawStory — Flutter Pet Diary App</h3>
+          <p>Production app: Drift DB, Riverpod, Material 3, 10 languages, WeChat Mini Program</p>
+          <a href="https://github.com/daviediao-code" target="_blank">View on GitHub →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section>
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm a professional bug bounty hunter and full-stack developer based in China. With 500+ targets scanned across HackerOne, Intigriti, and Bugcrowd, I bring real-world security expertise to every project.</p>
+        <p>I also build production Flutter apps (PawStory, 10K+ users), create animated videos, and design conversion-optimized landing pages. My approach combines technical depth with clean aesthetics.</p>
+        <p>When I'm not hunting bugs or building apps, I'm researching AI-powered security tools and writing about cybersecurity on Medium.</p>
+      </div>
+      <div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:16px">Skills</h3>
+        <div class="skills-list">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Flutter/Dart</span>
+          <span class="skill-tag">React/Next.js</span>
+          <span class="style="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">GSAP</span>
+          <span class="skill-tag">HyperFrames</span>
+          <span class="skill-tag">Security Auditing</span>
+          <span class="skill-tag">Penetration Testing</span>
+          <span class="skill-tag">API Security</span>
+          <span class="skill-tag">OWASP</span>
+          <span class="skill-tag">Bug Bounty</span>
+          <span class="skill-tag">Web Scraping</span>
+          <span class="skill-tag">Browser Automation</span>
+          <span class="skill-tag">Drift Database</span>
+          <span class="skill-tag">Riverpod</span>
+          <span class="skill-tag">Material 3</span>
+          <span class="skill-tag">i18n</span>
+          <span class="skill-tag">FFmpeg</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Git/GitHub</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section>
+  <div class="container">
+    <div class="contact-section">
+      <h2>Let's Work Together</h2>
+      <p>Have a project in mind? Let's discuss your requirements and timeline.</p>
+      <div class="contact-links">
+        <a href="mailto:daviediao@gmail.com" class="btn btn-primary">📧 Email Me</a>
+        <a href="https://github.com/daviediao-code" class="btn btn-outline" target="_blank">🐙 GitHub</a>
+        <a href="https://www.upwork.com/freelancers/~01930ead8e14a9691e" class="btn btn-outline" target="_blank">💼 Upwork</a>
+        <a href="https://www.freelancer.com/u/diaod4" class="btn btn-outline" target="_blank">🌐 Freelancer.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Davie Diao. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
