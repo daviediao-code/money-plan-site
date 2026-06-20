@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bug Bounty Automation Workflow - Gumroad</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  max-width: 600px;
+  overflow: hidden;
+}
+.header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.header p {
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+.badge {
+  display: inline-block;
+  background: #00d4ff;
+  color: #000;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.content {
+  padding: 40px;
+}
+.features {
+  list-style: none;
+  margin: 20px 0;
+}
+.features li {
+  padding: 10px 0;
+  padding-left: 30px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+.features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #00d4ff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.price {
+  text-align: center;
+  margin: 30px 0;
+}
+.price .amount {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1a1a2e;
+}
+.price .period {
+  color: #666;
+}
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <div class="badge">AUTOMATION WORKFLOW</div>
+    <h1>Bug Bounty Automation Suite</h1>
+    <p>Automated reconnaissance, scanning, and reporting workflow for bug bounty hunters</p>
+  </div>
+  <div class="content">
+    <h2>What's Included:</h2>
+    <ul class="features">
+      <li>Automated subdomain enumeration & port scanning</li>
+      <li>JSON API endpoint discovery from SPA bundles</li>
+      <li>CORS misconfiguration detection</li>
+      <li>Automated vulnerability scoring & prioritization</li>
+      <li>Beautiful HTML/PDF report generation</li>
+      <li>CI/CD integration (GitHub Actions)</li>
+      <li>Step-by-step setup guide & documentation</li>
+      <li>Lifetime updates & community support</li>
+    </ul>
+    <div class="price">
+      <span class="amount">$49</span>
+      <span class="period">one-time</span>
+    </div>
+    <a href="https://gumroad.com/l/checkout" class="btn">Buy Now →</a>
+  </div>
+  <div class="footer">
+    <p>Instant download • 30-day money-back guarantee</p>
+  </div>
+</div>
+</body>
+</html>
