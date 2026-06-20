@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tongwei Trade Business | Software Development &amp; IT Services</title>
+<meta name="description" content="Professional software development, AI solutions, mobile applications, and information technology services.">
+<meta name="keywords" content="Software Development, Mobile Apps, AI Solutions, IT Services, PawStory">
+<meta name="author" content="Tongwei Trade Business">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tongwei.pages.dev/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Tongwei Trade Business | Software Development &amp; IT Services">
+<meta property="og:description" content="Professional software development, AI solutions, mobile applications, and information technology services.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tongwei.pages.dev/">
+<meta property="og:site_name" content="Tongwei Trade Business">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tongwei Trade Business | Software Development &amp; IT Services">
+<meta name="twitter:description" content="Professional software development, AI solutions, mobile applications, and information technology services.">
+
+<!-- JSON-LD Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tongwei Trade Business",
+  "alternateName": ["永平县同威商贸商行", "Yongping County Tongwei Trade Business (Individual Industrial and Commercial Household)"],
+  "identifier": "92532928MAE1JR617D",
+  "foundingDate": "2024-10-21",
+  "url": "https://tongwei.pages.dev",
+  "email": "daviediao@gmail.com",
+  "telephone": "+86-153-4784-3564",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 9596, Longjie Village Committee, Longjie Town",
+    "addressLocality": "Yongping County",
+    "addressRegion": "Dali Bai Autonomous Prefecture, Yunnan Province",
+    "postalCode": "672600",
+    "addressCountry": "CN"
+  },
+  "sameAs": [],
+  "knowsAbout": ["Software Development", "Mobile Applications", "AI Solutions", "Information Technology Services"],
+  "hasOffering": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "PawStory: Pet Journal"
+    }
+  }
+}
+</script>
+
+<style>
+:root {
+  --primary: #0a64e0;
+  --primary-dark: #084ba0;
+  --primary-light: #e8f1fc;
+  --accent: #00d4ff;
+  --dark: #0b1426;
+  --dark2: #132039;
+  --gray: #6b7b8d;
+  --light: #f4f7fb;
+  --white: #ffffff;
+  --gradient: linear-gradient(135deg, #0a64e0 0%, #00d4ff 100%);
+  --shadow: 0 4px 24px rgba(10,100,224,0.10);
+  --shadow-lg: 0 12px 48px rgba(10,100,224,0.15);
+  --radius: 12px;
+  --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+  color: var(--dark);
+  background: var(--white);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+img { max-width: 100%; display: block; }
+.container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+/* ===== NAV ===== */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(10,100,224,0.08);
+  transition: var(--transition);
+}
+nav.scrolled { box-shadow: var(--shadow); }
+.nav-inner {
+  max-width: 1140px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 68px;
+}
+.nav-logo {
+  font-size: 1.25rem; font-weight: 800;
+  background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.nav-links { display: flex; gap: 28px; align-items: center; list-style: none; }
+.nav-links a {
+  font-size: 0.9rem; font-weight: 500; color: var(--gray);
+  position: relative; padding: 4px 0;
+}
+.nav-links a::after {
+  content: ""; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
+  background: var(--gradient); transition: var(--transition);
+}
+.nav-links a:hover { color: var(--primary); }
+.nav-links a:hover::after { width: 100%; }
+.nav-right { display: flex; align-items: center; gap: 16px; }
+.lang-toggle {
+  background: var(--gradient); color: white; border: none;
+  padding: 8px 20px; border-radius: 24px; font-size: 0.88rem; font-weight: 700;
+  cursor: pointer; transition: var(--transition);
+  box-shadow: 0 2px 12px rgba(10,100,224,0.25);
+  white-space: nowrap;
+}
+.lang-toggle:hover { transform: scale(1.06); box-shadow: 0 4px 20px rgba(10,100,224,0.4); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--dark); transition: var(--transition); }
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 82vh; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(160deg, #0b1426 0%, #0f2847 40%, #0a3d6b 70%, #0a64e0 100%);
+  position: relative; overflow: hidden; padding: 80px 24px 60px;
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(10,100,224,0.2) 0%, transparent 40%),
+    radial-gradient(circle at 60% 80%, rgba(0,212,255,0.1) 0%, transparent 40%);
+  animation: heroGlow 8s ease-in-out infinite alternate;
+}
+@keyframes heroGlow {
+  0% { opacity: 0.7; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.05); }
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-particles {
+  position: absolute; inset: 0; overflow: hidden;
+}
+.particle {
+  position: absolute; border-radius: 50%; background: rgba(0,212,255,0.4);
+  animation: float linear infinite;
+}
+@keyframes float {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
+}
+.hero-content {
+  position: relative; z-index: 2; text-align: center; max-width: 800px;
+}
+.hero-badge {
+  display: inline-block; background: rgba(0,212,255,0.15); border: 1px solid rgba(0,212,255,0.3);
+  padding: 6px 20px; border-radius: 24px; font-size: 0.85rem; color: var(--accent);
+  margin-bottom: 24px; animation: fadeInUp 0.6s ease-out;
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; color: white;
+  line-height: 1.15; margin-bottom: 16px;
+  animation: fadeInUp 0.5s ease-out 0.1s both;
+}
+.hero h1 span {
+  background: linear-gradient(90deg, #00d4ff, #0a64e0, #00d4ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+.hero .subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.35rem); color: rgba(255,255,255,0.7);
+  margin-bottom: 12px; font-weight: 400;
+  animation: fadeInUp 0.5s ease-out 0.2s both;
+}
+.hero .desc {
+  font-size: 1.05rem; color: rgba(255,255,255,0.55);
+  max-width: 600px; margin: 0 auto 36px; line-height: 1.8;
+  animation: fadeInUp 0.5s ease-out 0.3s both;
+}
+.hero-buttons {
+  display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+  animation: fadeInUp 0.5s ease-out 0.4s both;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 32px; border-radius: 8px; font-size: 1rem; font-weight: 600;
+  cursor: pointer; transition: var(--transition); border: none;
+}
+.btn-primary {
+  background: var(--gradient); color: white;
+  box-shadow: 0 4px 20px rgba(10,100,224,0.4);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(10,100,224,0.5); }
+.btn-outline {
+  background: transparent; color: white;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+.btn-outline:hover { border-color: white; background: rgba(255,255,255,0.08); }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== SECTIONS ===== */
+section { padding: 60px 0; }
+.section-header { text-align: center; margin-bottom: 36px; }
+.section-header .tag {
+  display: inline-block; background: var(--primary-light); color: var(--primary);
+  padding: 4px 16px; border-radius: 16px; font-size: 0.8rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;
+}
+.section-header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; color: var(--dark);
+  margin-bottom: 16px;
+}
+.section-header p { color: var(--gray); max-width: 600px; margin: 0 auto; font-size: 1.05rem; }
+
+/* ===== ABOUT ===== */
+.about { background: var(--light); }
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+}
+.about-visual {
+  background: var(--gradient); border-radius: var(--radius); padding: 48px;
+  position: relative; overflow: hidden;
+}
+.about-visual::before {
+  content: ""; position: absolute; inset: 0;
+  background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.03) 20px, rgba(255,255,255,0.03) 21px);
+}
+.about-stats {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px; position: relative; z-index: 1;
+}
+.stat-card {
+  background: rgba(255,255,255,0.12); backdrop-filter: blur(8px);
+  padding: 24px; border-radius: 10px; text-align: center;
+}
+.stat-card .num {
+  font-size: 2rem; font-weight: 800; color: white; display: block;
+}
+.stat-card .label { font-size: 0.85rem; color: rgba(255,255,255,0.8); }
+.about-text h3 {
+  font-size: 1.5rem; font-weight: 700; margin-bottom: 16px; color: var(--dark);
+}
+.about-text p { color: var(--gray); margin-bottom: 16px; }
+.about-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.about-tags span {
+  background: var(--primary-light); color: var(--primary);
+  padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;
+}
+
+/* ===== SERVICES ===== */
+.services-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.service-card {
+  background: white; border: 1px solid rgba(10,100,224,0.08);
+  border-radius: var(--radius); padding: 36px 28px;
+  transition: var(--transition); position: relative; overflow: hidden;
+}
+.service-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--gradient); transform: scaleX(0); transition: var(--transition);
+}
+.service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.service-card:hover::before { transform: scaleX(1); }
+.service-icon {
+  width: 52px; height: 52px; border-radius: 12px;
+  background: var(--primary-light); display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; margin-bottom: 20px;
+}
+.service-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; color: var(--dark); }
+.service-card p { color: var(--gray); font-size: 0.92rem; line-height: 1.7; }
+
+/* ===== PRODUCTS ===== */
+.products { background: var(--light); }
+.product-showcase {
+  display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: center;
+  background: white; border-radius: 16px; overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.product-mockup {
+  background: linear-gradient(135deg, #0a64e0, #00d4ff);
+  padding: 48px; display: flex; align-items: center; justify-content: center;
+  min-height: 300px;
+}
+.phone-frame {
+  width: 180px; height: 340px; background: #1a1a2e; border-radius: 28px;
+  padding: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  position: relative;
+}
+.phone-screen {
+  width: 100%; height: 100%; background: linear-gradient(180deg, #e8f5e9, #fff);
+  border-radius: 20px; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; padding: 20px;
+}
+.phone-screen .logo { font-size: 1.4rem; font-weight: 800; color: #4caf50; margin-bottom: 4px; }
+.phone-screen .sub { font-size: 0.65rem; color: #888; }
+.phone-screen .icon-row { display: flex; gap: 12px; margin-top: 16px; }
+.phone-screen .mini-icon {
+  width: 36px; height: 36px; border-radius: 10px; display: flex;
+  align-items: center; justify-content: center; font-size: 0.9rem;
+}
+.product-info { padding: 32px 32px 32px 0; }
+.product-info h3 { font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; }
+.product-info .tagline { color: var(--primary); font-weight: 600; margin-bottom: 20px; }
+.feature-list { list-style: none; display: grid; gap: 12px; }
+.feature-list li {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 0.95rem; color: var(--dark);
+}
+.feature-list .check {
+  width: 24px; height: 24px; border-radius: 50%; background: #e8f5e9;
+  display: flex; align-items: center; justify-content: center;
+  color: #4caf50; font-size: 0.8rem; flex-shrink: 0;
+}
+.product-note {
+  margin-top: 24px; padding: 12px 16px; background: var(--primary-light);
+  border-radius: 8px; font-size: 0.88rem; color: var(--primary); font-style: italic;
+}
+
+/* ===== BUSINESS INFO ===== */
+.info-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+  max-width: 800px; margin: 0 auto;
+}
+.info-card {
+  background: white; border: 1px solid rgba(10,100,224,0.08);
+  border-radius: var(--radius); padding: 20px 24px;
+  display: flex; flex-direction: column; gap: 4px;
+  transition: var(--transition);
+}
+.info-card:hover { box-shadow: var(--shadow); border-color: var(--primary); }
+.info-card .label { font-size: 0.78rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+.info-card .value { font-size: 0.95rem; color: var(--dark); font-weight: 500; }
+
+/* ===== POLICIES ===== */
+.policies { background: var(--light); }
+.policy-tabs {
+  display: flex; justify-content: center; gap: 12px; margin-bottom: 40px;
+}
+.policy-tab {
+  padding: 10px 24px; border-radius: 8px; border: 2px solid rgba(10,100,224,0.15);
+  background: white; font-size: 0.95rem; font-weight: 600; cursor: pointer;
+  transition: var(--transition); color: var(--gray);
+}
+.policy-tab.active, .policy-tab:hover {
+  background: var(--gradient); color: white; border-color: transparent;
+}
+.policy-content { display: none; max-width: 800px; margin: 0 auto; }
+.policy-content.active { display: block; }
+.policy-content h3 { font-size: 1.2rem; font-weight: 700; margin: 28px 0 12px; color: var(--dark); }
+.policy-content h3:first-child { margin-top: 0; }
+.policy-content p, .policy-content li { color: var(--gray); font-size: 0.95rem; margin-bottom: 8px; }
+.policy-content ul { padding-left: 24px; }
+
+/* ===== CONTACT ===== */
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+}
+.contact-info-cards { display: grid; gap: 20px; }
+.contact-card {
+  display: flex; gap: 16px; align-items: flex-start;
+  background: var(--light); padding: 24px; border-radius: var(--radius);
+  transition: var(--transition);
+}
+.contact-card:hover { box-shadow: var(--shadow); transform: translateX(4px); }
+.contact-card .icon {
+  width: 44px; height: 44px; border-radius: 10px; background: var(--gradient);
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 1.1rem; flex-shrink: 0;
+}
+.contact-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+.contact-card p { font-size: 0.9rem; color: var(--gray); }
+.contact-form {
+  background: white; padding: 36px; border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; color: var(--dark); }
+.form-group input, .form-group textarea {
+  width: 100%; padding: 12px 16px; border: 2px solid rgba(10,100,224,0.1);
+  border-radius: 8px; font-size: 0.95rem; transition: var(--transition);
+  font-family: inherit; background: var(--light);
+}
+.form-group input:focus, .form-group textarea:focus {
+  outline: none; border-color: var(--primary); background: white;
+  box-shadow: 0 0 0 4px rgba(10,100,224,0.08);
+}
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-submit {
+  width: 100%; padding: 14px; background: var(--gradient); color: white;
+  border: none; border-radius: 8px; font-size: 1rem; font-weight: 600;
+  cursor: pointer; transition: var(--transition);
+}
+.form-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(10,100,224,0.3); }
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--dark); color: rgba(255,255,255,0.6); padding: 60px 0 30px;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px;
+  margin-bottom: 40px;
+}
+.footer-brand h3 {
+  font-size: 1.2rem; font-weight: 800; color: white; margin-bottom: 12px;
+  background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.footer-brand p { font-size: 0.9rem; line-height: 1.7; }
+.footer-links h4 { color: white; font-size: 0.95rem; margin-bottom: 16px; }
+.footer-links ul { list-style: none; }
+.footer-links li { margin-bottom: 8px; }
+.footer-links a { font-size: 0.88rem; transition: var(--transition); }
+.footer-links a:hover { color: var(--accent); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.85rem; flex-wrap: wrap; gap: 12px;
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+.reveal {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .product-showcase { grid-template-columns: 1fr; }
+  .product-info { padding: 32px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  section { padding: 72px 0; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .nav-links.open {
+    display: flex; flex-direction: column; position: absolute;
+    top: 68px; left: 0; right: 0; background: white;
+    padding: 24px; gap: 16px; border-bottom: 1px solid rgba(10,100,224,0.08);
+    box-shadow: var(--shadow);
+  }
+  .services-grid { grid-template-columns: 1fr; }
+  .info-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2rem; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .policy-tabs { flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Tongwei Trade Business</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-zh="关于我们" data-en="About">About</a></li>
+      <li><a href="#services" data-zh="服务" data-en="Services">Services</a></li>
+      <li><a href="#products" data-zh="产品" data-en="Products">Products</a></li>
+      <li><a href="#info" data-zh="企业信息" data-en="Info">Info</a></li>
+      <li><a href="#policies" data-zh="政策" data-en="Policies">Policies</a></li>
+      <li><a href="#contact" data-zh="联系我们" data-en="Contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggleBtn" onclick="toggleLang()">中文</button>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-badge" data-zh="🏢 经工商注册认证的企业" data-en="🏢 Registered &amp; Verified Enterprise">🏢 Registered &amp; Verified Enterprise</div>
+    <h1><span>Tongwei Trade Business</span></h1>
+    <p class="subtitle" data-zh="软件开发与信息技术服务" data-en="Software Development &amp; IT Services">Software Development &amp; IT Services</p>
+    <p class="desc" data-zh="同威商贸商行提供专业的软件开发、移动应用开发、AI赋能解决方案及信息技术服务，助力个人与企业实现数字化转型。" data-en="Tongwei Trade Business provides professional software development, mobile application development, AI-powered solutions, and information technology services for individuals and businesses.">Tongwei Trade Business provides professional software development, mobile application development, AI-powered solutions, and information technology services for individuals and businesses.</p>
+    <div class="hero-buttons">
+      <a href="#about" class="btn btn-primary" data-zh="关于我们" data-en="About Us">About Us</a>
+      <a href="#contact" class="btn btn-outline" data-zh="联系我们" data-en="Contact Us">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag" data-zh="关于我们" data-en="ABOUT US">ABOUT US</span>
+      <h2 data-zh="关于我们" data-en="About Us">About Us</h2>
+      <p data-zh="扎根云南，面向全球的专业技术服务提供商" data-en="A Professional Tech Service Provider Rooted in Yunnan, Serving the Globe">A Professional Tech Service Provider Rooted in Yunnan, Serving the Globe</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-stats">
+          <div class="stat-card"><span class="num">2024</span><span class="label" data-zh="成立时间" data-en="Est. Year">Est. Year</span></div>
+          <div class="stat-card"><span class="num">6+</span><span class="label" data-zh="核心服务" data-en="Core Services">Core Services</span></div>
+          <div class="stat-card"><span class="num">1</span><span class="label" data-zh="已上线产品" data-en="Launched Product">Launched Product</span></div>
+          <div class="stat-card"><span class="num">∞</span><span class="label" data-zh="创新动力" data-en="Innovation Drive">Innovation Drive</span></div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h3 data-zh="企业使命" data-en="Our Mission">Our Mission</h3>
+        <p data-zh="同威商贸商行致力于通过前沿技术与专业服务，为个人和企业提供高质量的数字化解决方案。我们相信，技术创新是推动社会进步的核心力量。" data-en="Tongwei Trade Business is dedicated to delivering high-quality digital solutions through cutting-edge technology and professional services. We believe technological innovation is the core driver of social progress.">Tongwei Trade Business is dedicated to delivering high-quality digital solutions through cutting-edge technology and professional services. We believe technological innovation is the core driver of social progress.</p>
+        <h3 data-zh="企业愿景" data-en="Our Vision">Our Vision</h3>
+        <p data-zh="成为值得信赖的国际化技术服务企业，让每一家客户都能享受到专业级的软件与信息化服务。" data-en="To become a trusted international technology service enterprise, enabling every client to access professional-grade software and IT services.">To become a trusted international technology service enterprise, enabling every client to access professional-grade software and IT services.</p>
+        <div class="about-tags">
+          <span data-zh="软件开发" data-en="Software Development">Software Development</span>
+          <span data-zh="移动应用" data-en="Mobile Applications">Mobile Applications</span>
+          <span data-zh="AI解决方案" data-en="AI Solutions">AI Solutions</span>
+          <span data-zh="数字化转型" data-en="Digital Transformation">Digital Transformation</span>
+          <span data-zh="IT服务" data-en="IT Services">IT Services</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag" data-zh="我们的服务" data-en="SERVICES">SERVICES</span>
+      <h2 data-zh="专业服务" data-en="Our Services">Our Services</h2>
+      <p data-zh="全方位的技术服务，满足您的多元化需求" data-en="Comprehensive tech services to meet your diverse needs">Comprehensive tech services to meet your diverse needs</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">📱</div>
+        <h3 data-zh="移动应用开发" data-en="Mobile App Development">Mobile App Development</h3>
+        <p data-zh="我们使用Flutter等跨平台框架，为您打造iOS和Android双端原生体验的移动应用。从需求分析、UI设计到开发测试、上架发布，提供全流程的一站式移动应用开发服务，确保应用性能卓越、用户体验流畅。" data-en="We use cross-platform frameworks like Flutter to build mobile applications with native experiences on both iOS and Android. From requirements analysis, UI design, to development, testing, and app store launch, we provide end-to-end mobile app development services ensuring excellent performance and seamless user experience.">We use cross-platform frameworks like Flutter to build mobile applications with native experiences on both iOS and Android. From requirements analysis, UI design, to development, testing, and app store launch, we provide end-to-end mobile app development services ensuring excellent performance and seamless user experience.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🌐</div>
+        <h3 data-zh="Web应用开发" data-en="Web Application Development">Web Application Development</h3>
+        <p data-zh="我们开发响应式、高性能的Web应用和网站，采用现代化前端框架与后端技术栈。无论是企业官网、SaaS平台还是定制化Web系统，我们都以最佳实践确保项目的可扩展性、安全性和用户体验。" data-en="We develop responsive, high-performance web applications and websites using modern frontend frameworks and backend technologies. Whether it is a corporate website, SaaS platform, or customized web system, we ensure scalability, security, and user experience through best practices.">We develop responsive, high-performance web applications and websites using modern frontend frameworks and backend technologies. Whether it is a corporate website, SaaS platform, or customized web system, we ensure scalability, security, and user experience through best practices.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🤖</div>
+        <h3 data-zh="AI集成解决方案" data-en="AI Integration Solutions">AI Integration Solutions</h3>
+        <p data-zh="我们将人工智能技术融入您的业务流程，包括自然语言处理、图像识别、智能推荐和自动化决策系统。通过与主流AI平台的深度集成，帮助企业提升运营效率、降低人力成本、创造新的商业价值。" data-en="We integrate artificial intelligence into your business processes, including natural language processing, image recognition, intelligent recommendation, and automated decision-making systems. Through deep integration with mainstream AI platforms, we help enterprises improve operational efficiency, reduce labor costs, and create new business value.">We integrate artificial intelligence into your business processes, including natural language processing, image recognition, intelligent recommendation, and automated decision-making systems. Through deep integration with mainstream AI platforms, we help enterprises improve operational efficiency, reduce labor costs, and create new business value.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">⚙️</div>
+        <h3 data-zh="企业软件系统" data-en="Enterprise Software Systems">Enterprise Software Systems</h3>
+        <p data-zh="我们为各类企业提供定制化的ERP、CRM、OA等企业管理系统，涵盖业务流程管理、数据整合、权限控制等核心功能。系统采用模块化架构设计，便于后续扩展和维护，助力企业实现精细化管理。" data-en="We provide customized ERP, CRM, OA and other enterprise management systems for various organizations, covering core functions such as business process management, data integration, and permission control. The systems adopt modular architecture design for easy expansion and maintenance, helping enterprises achieve refined management.">We provide customized ERP, CRM, OA and other enterprise management systems for various organizations, covering core functions such as business process management, data integration, and permission control. The systems adopt modular architecture design for easy expansion and maintenance, helping enterprises achieve refined management.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📊</div>
+        <h3 data-zh="数据管理与分析" data-en="Data Management &amp; Analytics">Data Management &amp; Analytics</h3>
+        <p data-zh="我们提供数据采集、存储、清洗、分析和可视化的全链路数据服务。通过构建高效的数据仓库和BI看板，帮助企业管理者快速掌握业务动态、发现潜在机会、做出数据驱动的精准决策。" data-en="We provide full-chain data services including data collection, storage, cleaning, analysis, and visualization. By building efficient data warehouses and BI dashboards, we help management quickly grasp business dynamics, discover potential opportunities, and make data-driven precise decisions.">We provide full-chain data services including data collection, storage, cleaning, analysis, and visualization. By building efficient data warehouses and BI dashboards, we help management quickly grasp business dynamics, discover potential opportunities, and make data-driven precise decisions.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">💡</div>
+        <h3 data-zh="技术咨询" data-en="Technical Consulting">Technical Consulting</h3>
+        <p data-zh="我们的技术专家团队为企业提供全方位的技术咨询服务，包括技术选型评估、系统架构设计、安全审计、性能优化和数字化转型战略规划，帮助企业少走弯路、降低技术风险、提高投资回报率。" data-en="Our technical expert team provides comprehensive consulting services for enterprises, including technology selection assessment, system architecture design, security auditing, performance optimization, and digital transformation strategic planning, helping enterprises avoid detours, reduce technical risks, and improve ROI.">Our technical expert team provides comprehensive consulting services for enterprises, including technology selection assessment, system architecture design, security auditing, performance optimization, and digital transformation strategic planning, helping enterprises avoid detours, reduce technical risks, and improve ROI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag" data-zh="产品展示" data-en="PRODUCTS">PRODUCTS</span>
+      <h2 data-zh="我们的产品" data-en="Our Products">Our Products</h2>
+      <p data-zh="从创意到落地，打造用户喜爱的产品" data-en="From concept to reality, building products users love">From concept to reality, building products users love</p>
+    </div>
+    <div class="product-showcase reveal">
+      <div class="product-mockup">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="logo">🐾 PawStory</div>
+            <div class="sub">Pet Journal</div>
+            <div class="icon-row">
+              <div class="mini-icon" style="background:#e8f5e9;">❤️</div>
+              <div class="mini-icon" style="background:#fff3e0;">📝</div>
+              <div class="mini-icon" style="background:#e3f2fd;">📸</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3>PawStory</h3>
+        <div class="tagline" data-zh="🐾 您的爱宠成长日记" data-en="🐾 Your Pet's Growth Journal">🐾 Your Pet's Growth Journal</div>
+        <ul class="feature-list">
+          <li><span class="check">✓</span><span data-zh="宠物健康追踪 — 记录疫苗、体检、用药等健康信息" data-en="Pet Health Tracking — Record vaccines, checkups, medications and health info">Pet Health Tracking — Record vaccines, checkups, medications and health info</span></li>
+          <li><span class="check">✓</span><span data-zh="每日宠物日记 — 用文字和图片记录与毛孩子的每一天" data-en="Daily Pet Journal — Document every day with your furry friend through text and photos">Daily Pet Journal — Document every day with your furry friend through text and photos</span></li>
+          <li><span class="check">✓</span><span data-zh="成长记录 — 身高、体重、里程碑事件一目了然" data-en="Growth Records — Height, weight, milestone events at a glance">Growth Records — Height, weight, milestone events at a glance</span></li>
+          <li><span class="check">✓</span><span data-zh="照片回忆 — 珍贵瞬间永久珍藏" data-en="Photo Memories — Cherish precious moments forever">Photo Memories — Cherish precious moments forever</span></li>
+          <li><span class="check">✓</span><span data-zh="云端同步 — 多设备无缝同步，数据安全可靠" data-en="Cloud Synchronization — Seamless sync across devices, secure and reliable">Cloud Synchronization — Seamless sync across devices, secure and reliable</span></li>
+        </ul>
+        <div class="product-note" data-zh="更多软件产品正在开发中…" data-en="Additional software products are currently under development.">Additional software products are currently under development.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BUSINESS INFO ===== -->
+<section class="biz-info" id="info">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag" data-zh="企业信息" data-en="BUSINESS INFO">BUSINESS INFO</span>
+      <h2 data-zh="企业注册信息" data-en="Registered Business Information">Registered Business Information</h2>
+      <p data-zh="合法注册、诚信经营" data-en="Legally registered, operating with integrity">Legally registered, operating with integrity</p>
+    </div>
+    <div class="info-grid">
+      <div class="info-card reveal">
+        <span class="label" data-zh="企业全称（中文）" data-en="Legal Business Name (CN)">Legal Business Name (CN)</span>
+        <span class="value">永平县同威商贸商行（个体工商户）</span>
+      </div>
+      <div class="info-card reveal">
+        <span class="label" data-zh="企业全称（英文）" data-en="Legal Business Name (EN)">Legal Business Name (EN)</span>
+        <span class="value">Yongping County Tongwei Trade Business (Individual Industrial and Commercial Household)</span>
+      </div>
+      <div class="info-card reveal">
+        <span class="label" data-zh="统一社会信用代码" data-en="Business Registration Number">Business Registration Number</span>
+        <span class="value">92532928MAE1JR617D</span>
+      </div>
+      <div class="info-card reveal">
+        <span class="label" data-zh="成立日期" data-en="Established Date">Established Date</span>
+        <span class="value">2024年10月21日 / October 21, 2024</span>
+      </div>
+      <div class="info-card reveal">
+        <span class="label" data-zh="负责人" data-en="Owner / Legal Representative">Owner / Legal Representative</span>
+        <span class="value">刁少志 (Diaoshaozhi)</span>
+      </div>
+      <div class="info-card reveal">
+        <span class="label" data-zh="主营业务" data-en="Main Business">Main Business</span>
+        <span class="value" data-zh="信息技术服务、软件与应用开发" data-en="IT Services, Software &amp; Application Development">IT Services, Software &amp; Application Development</span>
+      </div>
+      <div class="info-card reveal">
+        <span class="label" data-zh="办公地址（中文）" data-en="Office Address (CN)">Office Address (CN)</span>
+        <span class="value">永平县龙街镇龙街村委会9596号</span>
+      </div>
+      <div class="info-card reveal">
+        <span class="label" data-zh="办公地址（英文）" data-en="Office Address (EN)">Office Address (EN)</span>
+        <span class="value">No. 9596, Longjie Village Committee, Longjie Town, Yongping County, Dali Bai Autonomous Prefecture, Yunnan Province</span>
+      </div>
+      <div class="info-card reveal">
+        <span class="label" data-zh="邮编" data-en="Postal Code">Postal Code</span>
+        <span class="value">672600</span>
+      </div>
+      <div class="info-card reveal">
+        <span class="label" data-zh="联系电话" data-en="Phone">Phone</span>
+        <span class="value"><a href="tel:+8615347843564" style="color:var(--primary);">+86-153-4784-3564</a></span>
+      </div>
+      <div class="info-card reveal">
+        <span class="label" data-zh="联系邮箱" data-en="Email">Email</span>
+        <span class="value"><a href="mailto:daviediao@gmail.com" style="color:var(--primary);">daviediao@gmail.com</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== POLICIES ===== -->
+<section class="policies" id="policies">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag" data-zh="政策声明" data-en="POLICIES">POLICIES</span>
+      <h2 data-zh="隐私政策与服务条款" data-en="Privacy Policy &amp; Terms of Service">Privacy Policy &amp; Terms of Service</h2>
+    </div>
+    <div class="policy-tabs reveal">
+      <button class="policy-tab active" id="tab-privacy" onclick="switchPolicy('privacy')" data-zh="隐私政策" data-en="Privacy Policy">Privacy Policy</button>
+      <button class="policy-tab" id="tab-terms" onclick="switchPolicy('terms')" data-zh="服务条款" data-en="Terms of Service">Terms of Service</button>
+    </div>
+    <div class="policy-content active" id="privacy">
+      <h3>1. Information Collection</h3>
+      <p>We collect information you voluntarily provide, including but not limited to your name, email address, phone number, and message content when you contact us through our website or applications. We also collect device information, browser type, and usage data to improve our services.</p>
+      <h3>2. How Information Is Used</h3>
+      <p>The information we collect is used solely for the following purposes: responding to your inquiries, providing and improving our services, maintaining application functionality, sending service-related notifications, and complying with legal obligations. We will never sell your personal information to third parties.</p>
+      <h3>3. Data Security</h3>
+      <p>We implement industry-standard security measures including encryption in transit (TLS/HTTPS), secure server configurations, and access controls to protect your personal information. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
+      <h3>4. User Rights</h3>
+      <p>You have the right to access, correct, delete, or export your personal data at any time. You may exercise these rights by contacting us at daviediao@gmail.com. We will respond to legitimate requests within 30 days.</p>
+      <h3>5. Cookies</h3>
+      <p>Our website may use essential cookies for functionality purposes. We do not use tracking cookies or third-party advertising cookies. You can disable cookies in your browser settings at any time.</p>
+      <h3>6. Third-Party Services</h3>
+      <p>Our applications may integrate with third-party services (such as cloud storage providers). These services have their own privacy policies, and we encourage you to review them. We are not responsible for the privacy practices of third-party services.</p>
+      <h3>7. Google Play Policy Compliance</h3>
+      <p>This website and our applications comply with Google Play Developer Distribution Agreement and Google Play Personal Data requirements. We provide clear privacy policy access, honor user data rights, and maintain transparent data handling practices. Our organization is verifiably registered with the business registration number 92532928MAE1JR617D.</p>
+      <h3>8. Contact Information</h3>
+      <p>For any privacy-related inquiries, please contact us at daviediao@gmail.com or call +86-153-4784-3564. Our office is located at No. 9596, Longjie Village Committee, Longjie Town, Yongping County, Dali Bai Autonomous Prefecture, Yunnan Province, China, 672600.</p>
+    </div>
+    <div class="policy-content" id="terms">
+      <h3>1. User Responsibilities</h3>
+      <p>Users agree to use our services and products in compliance with applicable laws and regulations. Users shall not use our services for any illegal, harmful, or unauthorized purpose. Users are responsible for maintaining the confidentiality of their account credentials.</p>
+      <h3>2. Acceptable Use</h3>
+      <p>You agree not to misuse our services, attempt to gain unauthorized access to our systems, interfere with service operation, or engage in any activity that could damage, disable, or impair our services. Prohibited activities include but are not limited to reverse engineering, distributing malware, and launching denial-of-service attacks.</p>
+      <h3>3. Intellectual Property</h3>
+      <p>All content, trademarks, logos, software, and materials on this website and in our applications are the intellectual property of Tongwei Trade Business or its licensors. Unauthorized reproduction, distribution, or modification of any content is strictly prohibited without prior written consent.</p>
+      <h3>4. Disclaimer</h3>
+      <p>Our services are provided "as is" without warranties of any kind, either express or implied. We do not warrant that our services will be uninterrupted, error-free, or secure. We reserve the right to modify, suspend, or discontinue any aspect of our services at any time.</p>
+      <h3>5. Limitation of Liability</h3>
+      <p>To the maximum extent permitted by law, Tongwei Trade Business shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services. Our total liability shall not exceed the amount paid by you (if any) for accessing our services in the twelve months preceding the claim.</p>
+      <h3>6. Contact</h3>
+      <p>If you have any questions about these Terms of Service, please contact us at daviediao@gmail.com or call +86-153-4784-3564.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag" data-zh="联系我们" data-en="CONTACT">CONTACT</span>
+      <h2 data-zh="联系我们" data-en="Contact Us">Contact Us</h2>
+      <p data-zh="期待与您的合作" data-en="Looking forward to working with you">Looking forward to working with you</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info-cards reveal">
+        <div class="contact-card">
+          <div class="icon">📞</div>
+          <div>
+            <h4 data-zh="电话" data-en="Phone">Phone</h4>
+            <p><a href="tel:+8615347843564" style="color:var(--primary);">+86-153-4784-3564</a></p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="icon">✉️</div>
+          <div>
+            <h4 data-zh="邮箱" data-en="Email">Email</h4>
+            <p><a href="mailto:daviediao@gmail.com" style="color:var(--primary);">daviediao@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="icon">📍</div>
+          <div>
+            <h4 data-zh="地址" data-en="Address">Address</h4>
+            <p>No. 9596, Longjie Village Committee, Longjie Town, Yongping County,<br>Dali Bai Autonomous Prefecture, Yunnan Province, 672600</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <form onsubmit="event.preventDefault(); alert('Message sent! (Demo only — connect a backend to enable actual submission.)');">
+          <div class="form-group">
+            <label data-zh="姓名" data-en="Name">Name</label>
+            <input type="text" required placeholder="">
+          </div>
+          <div class="form-group">
+            <label data-zh="邮箱" data-en="Email">Email</label>
+            <input type="email" required placeholder="">
+          </div>
+          <div class="form-group">
+            <label data-zh="留言" data-en="Message">Message</label>
+            <textarea required placeholder=""></textarea>
+          </div>
+          <button type="submit" class="form-submit" data-zh="发送消息" data-en="Send Message">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Tongwei Trade Business</h3>
+        <p data-zh="永平县同威商贸商行 — 专业的软件开发与信息技术服务提供商。统一社会信用代码：92532928MAE1JR617D" data-en="Yongping County Tongwei Trade Business — Professional software development and IT services provider. Registration: 92532928MAE1JR617D">Yongping County Tongwei Trade Business — Professional software development and IT services provider. Registration: 92532928MAE1JR617D</p>
+      </div>
+      <div class="footer-links">
+        <h4 data-zh="导航" data-en="Navigation">Navigation</h4>
+        <ul>
+          <li><a href="#about" data-zh="关于我们" data-en="About">About</a></li>
+          <li><a href="#services" data-zh="服务" data-en="Services">Services</a></li>
+          <li><a href="#products" data-zh="产品" data-en="Products">Products</a></li>
+          <li><a href="#info" data-zh="企业信息" data-en="Business Info">Business Info</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4 data-zh="法律" data-en="Legal">Legal</h4>
+        <ul>
+          <li><a href="#policies" data-zh="隐私政策" data-en="Privacy Policy">Privacy Policy</a></li>
+          <li><a href="#policies" data-zh="服务条款" data-en="Terms of Service">Terms</a></li>
+          <li><a href="#contact" data-zh="联系我们" data-en="Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Tongwei Trade Business. All rights reserved.</span>
+      <span data-zh="滇ICP备XXXXXXXX号" data-en="Registered in Yunnan, China">Registered in Yunnan, China</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== LANGUAGE TOGGLE =====
+let currentLang = 'en';
+
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'zh' : 'en';
+  
+  // Swap text content for ALL elements with data-zh/data-en
+  // Simple approach: just replace textContent, it's safe for leaf elements
+  document.querySelectorAll('[data-zh][data-en]').forEach(el => {
+    // Skip elements that have children with data-zh/data-en (like <li> wrapping <a>)
+    const hasTranslatableChildren = Array.from(el.children).some(child =>
+      child.hasAttribute('data-zh') && child.hasAttribute('data-en')
+    );
+    if (hasTranslatableChildren) return;
+    el.textContent = el.getAttribute('data-' + currentLang);
+  });
+  
+  // Update the toggle button
+  const btn = document.getElementById('langToggleBtn');
+  if (btn) {
+    btn.textContent = currentLang === 'en' ? '中文' : 'English';
+  }
+  
+  document.documentElement.lang = currentLang === 'en' ? 'en' : 'zh-CN';
+}
+
+// ===== MOBILE MENU =====
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('.nav-links a[href^="#"]').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+});
+// ===== NAVBAR SCROLL =====
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// ===== POLICY TABS =====
+function switchPolicy(tab) {
+  document.querySelectorAll('.policy-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.policy-content').forEach(c => c.classList.remove('active'));
+  if (tab === 'privacy') {
+    document.getElementById('tab-privacy').classList.add('active');
+    document.getElementById('privacy').classList.add('active');
+  } else {
+    document.getElementById('tab-terms').classList.add('active');
+    document.getElementById('terms').classList.add('active');
+  }
+}
+
+// ===== SCROLL REVEAL =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.05, rootMargin: '0px 0px -10px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ===== PARTICLES =====
+(function() {
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 20; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 4 + 2;
+    p.style.cssText = `
+      width: ${size}px; height: ${size}px;
+      left: ${Math.random() * 100}%;
+      animation-duration: ${Math.random() * 15 + 10}s;
+      animation-delay: ${Math.random() * 10}s;
+    `;
+    container.appendChild(p);
+  }
+})();
+</script>
+</body>
+</html>
